@@ -1,0 +1,6 @@
+{
+    "markdown.styles": [
+        "./.css/main_style.css",
+        "./.css/dotted_notes.css"
+    ],
+}
