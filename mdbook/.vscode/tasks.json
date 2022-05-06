@@ -1,0 +1,66 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "mdbook: build",
+            "type": "shell",
+            "windows": {
+                "command": ".\\scripts\\also-pdf.ps1",
+                "args": [
+                    "build"
+                ]
+            },
+            "command": "./scripts/also-pdf.sh",
+            "args": [
+                "build"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        // {
+        //     "label": "move builds to builds/html",
+        //     "type": "shell",
+        //     "windows": {
+        //         "command": "(mkdir html) -and (mv builds\\* html\\) -and (mv html builds\\)"
+        //     },
+        //     "problemMatcher": []
+        // },
+        {
+            "label": "mdbook: serve",
+            "type": "shell",
+            "windows": {
+                "command": ".\\scripts\\only-html.ps1",
+                "args": [
+                    "serve"
+                ]
+            },
+            "command": "./scripts/only-html.sh",
+            "args": [
+                "serve"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "mdbook: serve and open in browser",
+            "type": "shell",
+            "windows": {
+                "command": ".\\scripts\\only-html.ps1",
+                "args": [
+                    "serve",
+                    "-o"
+                ]
+            },
+            "command": "./scripts/only-html.sh",
+            "args": [
+                "serve",
+                "-o"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+[book]
+authors = ["Mattia Marchesini"]
+language = "#{language}"
+multilingual = false
+src = "src"
+title = "#{title}"
+description = "#{description}"
+
+[build]
+build-dir = "builds"
+
+[output.html]
+mathjax-support = true
+
+# [output.pdf]

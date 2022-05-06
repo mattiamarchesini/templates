@@ -1,0 +1,6 @@
+{
+    "search.exclude": {
+        "book/": true
+    },
+    "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+}

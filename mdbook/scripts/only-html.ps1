@@ -1,0 +1,1 @@
+$env:MDBOOK_BUILD__BUILD_DIR="builds\html"; mdbook $args

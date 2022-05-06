@@ -1,0 +1,1 @@
+$env:MDBOOK_OUTPUT__PDF="{}"; mdbook $args
