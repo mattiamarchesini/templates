@@ -1,3 +1,1 @@
-# #{projectName}
-
-## Installation
+# <!-- TODO: insert project name -->

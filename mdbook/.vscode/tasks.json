@@ -34,33 +34,34 @@
             "label": "mdbook: serve",
             "type": "shell",
             "windows": {
-                "command": ".\\scripts\\only-html.ps1",
-                "args": [
-                    "serve"
-                ]
+                "command": ".\\scripts\\only-html.ps1 serve"
             },
-            "command": "./scripts/only-html.sh",
-            "args": [
-                "serve"
-            ],
+            "command": "./scripts/only-html.sh serve",
             "problemMatcher": []
         },
         {
             "label": "mdbook: serve and open in browser",
             "type": "shell",
             "windows": {
-                "command": ".\\scripts\\only-html.ps1",
-                "args": [
-                    "serve",
-                    "-o"
-                ]
+                "command": ".\\scripts\\only-html.ps1 serve -o"
             },
-            "command": "./scripts/only-html.sh",
-            "args": [
-                "serve",
-                "-o"
-            ],
+            "command": "./scripts/only-html.sh serve -o",
             "problemMatcher": []
+        },
+        {
+            "label": "mdbook: run tests",
+            "type": "shell",
+            // TODO: actual tests script?
+            // "command": "./scripts/test.sh",
+            // "windows": {
+            //     "command": ".\\scripts\\test.ps1"
+            // },
+            "command": "mdbook test",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
     ]
 }
